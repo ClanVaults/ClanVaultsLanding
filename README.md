@@ -1,1 +1,1 @@
-# ClanVaultsLanding
+# ClanVaults
