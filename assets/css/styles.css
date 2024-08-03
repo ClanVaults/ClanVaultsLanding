@@ -1249,3 +1249,22 @@ body {
   color: #4b4b4b;
   font-size: 1.25rem;
 }
+
+.icon-img {
+  width: 20px;
+}
+
+.dark-theme .icon-img {
+  width: 20px;
+  display: none;
+}
+
+.icon-img2 {
+  width: 20px;
+  display: none;
+}
+
+.dark-theme .icon-img2 {
+  width: 20px;
+  display: flex;
+}
