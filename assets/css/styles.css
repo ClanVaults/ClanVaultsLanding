@@ -47,6 +47,12 @@
   --z-fixed: 100;
 }
 
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+}
+
 /* Responsive typography */
 @media screen and (min-width: 968px) {
   :root {
@@ -993,6 +999,12 @@ the website, in dark theme
   .footer__subscribe{
     width: initial;
   }
+
+  .team-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
 }
 
 /* For large devices */
@@ -1104,6 +1116,12 @@ the website, in dark theme
   .scrollup{
     right: 3rem;
   }
+
+  .team-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
 }
 
 a {
@@ -1112,4 +1130,122 @@ a {
 
 .dark-theme a {
   color: white;
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Background and Padding */
+.bg-neutral-50 {
+  background-color: #f8f9fa;
+}
+
+.dark-theme .bg-neutral-50 {
+  background-color: var(--container-color);
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.container {
+  max-width: 7xl;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.heading p {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.text-neutral-600 {
+  color: #4b4b4b;
+}
+
+.dark-theme .text-neutral-600 {
+  color: #ffffff;
+}
+
+.text-primary-color {
+  color: #4b4b4b;
+}
+
+.dark-theme .text-primary-color {
+  color: #ffffff;
+}
+
+.divider {
+  margin: 0 auto;
+  width: 100px;
+  border: 2px solid #4b4b4b;
+  background-color: #4b4b4b;
+}
+
+.intro-text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.dark-theme .intro-text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+/* Team List */
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.team-photo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.member-info {
+  text-align: center;
+}
+
+.member-name {
+  font-size: 1.125rem;
+  color: #4b4b4b;
+}
+
+.dark-theme .member-name {
+  font-size: 1.125rem;
+  color: #ffffff;
+}
+
+.member-role {
+  color: #6b7280;
+}
+
+.dark-theme .member-role {
+  color: #6d806b;
+}
+
+.linkedin-icon {
+  color: #4b4b4b;
+  font-size: 1.25rem;
 }
